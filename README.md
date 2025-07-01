@@ -32,12 +32,12 @@ TO_EMAIL=recipient@gmail.com
 
 Enable 2FA on your Google account, then go to:
 https://myaccount.google.com/apppasswords
-Generate an app password for "Mail" → copy it into .env.
-paste it to -> EMAIL_PASSWORD.
+Generate an app password for "Mail" → paste it to  
+EMAIL_PASSWORD.
 
 ## Run locally
 
-uvicorn main:app --reload
+uvicorn main:app --reload now 
 Visit: http://127.0.0.1:8000
 
 ## Deploy to Render (24/7)
