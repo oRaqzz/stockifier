@@ -16,8 +16,8 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-Create a .env file:
-
+Create a `.env` file:
+```env
 STOCK_SYMBOL=YourStockSymbol
 SCHEDULE_HOUR=HourToNotify
 SCHEDULE_MINUTE=MinuteToNotify
@@ -26,6 +26,7 @@ SMTP_PORT=587
 EMAIL_USER=your@gmail.com
 EMAIL_PASSWORD=your_app_password
 TO_EMAIL=recipient@gmail.com
+```
 
 Enable 2FA on your Google account, then go to:
 https://myaccount.google.com/apppasswords
