@@ -33,13 +33,14 @@ TO_EMAIL=recipient@gmail.com
 Enable 2FA on your Google account, then go to:
 https://myaccount.google.com/apppasswords
 Generate an app password for "Mail" → copy it into .env.
-Run locally
+paste it to -> EMAIL_PASSWORD.
+
+## Run locally
 
 uvicorn main:app --reload
-
 Visit: http://127.0.0.1:8000
 
-Deploy to Render (24/7)
+## Deploy to Render (24/7)
 ```
 Push code to GitHub
 On Render: New → Web Service → connect repo
@@ -47,4 +48,4 @@ Build command: pip install -r requirements.txt
 Start command: uvicorn main:app --host 0.0.0.0 --port 10000
 Add environment variables in Render
 ```
-Click Deploy
+Click Deploy!!
