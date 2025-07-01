@@ -9,12 +9,14 @@ Your daily stock price email notifier, built with FastAPI + Python.
 - Deployable to Render to run 24/7
 
 ## Local setup
+```
 Clone the repo and install dependencies:
 git clone https://github.com/oRaqzz/stockifier.git
 cd stockifier
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 Create a `.env` file:
 ```env
@@ -36,14 +38,13 @@ Run locally
 uvicorn main:app --reload
 
 Visit: http://127.0.0.1:8000
+
 Deploy to Render (24/7)
-
-
+```
 Push code to GitHub
-
 On Render: New → Web Service → connect repo
 Build command: pip install -r requirements.txt
 Start command: uvicorn main:app --host 0.0.0.0 --port 10000
 Add environment variables in Render
-
+```
 Click Deploy
